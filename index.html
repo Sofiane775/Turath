@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Turath — تراث</title>
+  <meta name="description" content="Carnet personnel : mémorisation du Coran, hadiths, savants, livres et maisons d'édition.">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131211" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Turath">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&family=Reem+Kufi:wght@500;700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/accueil" aria-label="Turath, accueil">
+      <span class="brand-fr">Turath</span><span class="brand-ar" lang="ar">تراث</span>
+    </a>
+    <a class="top-link" href="#/reglages" data-page="reglages">Réglages</a>
+  </header>
+
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#/accueil" data-page="accueil"><span class="n-ar" lang="ar">الرئيسية</span><span>Accueil</span></a>
+    <a href="#/coran" data-page="coran"><span class="n-ar" lang="ar">القرآن</span><span>Coran</span></a>
+    <a href="#/hadiths" data-page="hadiths"><span class="n-ar" lang="ar">الحديث</span><span>Hadiths</span></a>
+    <a href="#/savants" data-page="savants"><span class="n-ar" lang="ar">العلماء</span><span>Savants</span></a>
+    <a href="#/bibliotheque" data-page="bibliotheque"><span class="n-ar" lang="ar">المكتبة</span><span>Livres</span></a>
+  </nav>
+
+  <main id="view" class="view"></main>
+
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="quran-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
